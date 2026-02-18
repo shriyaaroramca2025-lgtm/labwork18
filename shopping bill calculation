@@ -1,0 +1,20 @@
+# Prices
+notebook_price = 45
+pen_price = 20
+
+# Quantities
+notebooks = 3
+pens = 2
+
+# Total cost calculation
+total_bill = (notebooks * notebook_price) + (pens * pen_price)
+
+# Money given by customer
+money_given = 500
+
+# Remaining balance
+remaining_balance = money_given - total_bill
+
+# Output
+print("Total Bill Amount:", total_bill)
+print("Remaining Balance:", remaining_balance)
