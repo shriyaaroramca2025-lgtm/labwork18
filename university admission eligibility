@@ -1,0 +1,20 @@
+percentage = float(input("Enter 12th percentage: "))
+maths = input("Studied Mathematics? (yes/no): ")
+exam_score = float(input("Enter entrance exam score: "))
+
+eligible = True
+
+if percentage < 75:
+    print("Not eligible: Less than 75% in 12th.")
+    eligible = False
+
+if maths.lower() != "yes":
+    print("Not eligible: Mathematics not studied.")
+    eligible = False
+
+if exam_score < 80:
+    print("Not eligible: Entrance score below 80.")
+    eligible = False
+
+if eligible:
+    print(" Student is eligible for admission.")
