@@ -1,0 +1,13 @@
+import math
+
+r = float(input("Enter radius: "))
+h = float(input("Enter height: "))
+l = float(input("Enter slant height: "))
+
+CSA = math.pi * r * l
+TSA = math.pi * r * (r + l)
+Volume = (1/3) * math.pi * r * r * h
+
+print("Curved Surface Area =", CSA)
+print("Total Surface Area =", TSA)
+print("Volume =", Volume)
