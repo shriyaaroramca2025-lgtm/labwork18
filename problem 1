@@ -12,3 +12,9 @@ print("After swapping:")
 print("a =", a)
 print("b =", b)
 
+'''OUTPUT-
+Enter first number: 79
+Enter second number: 78
+After swapping:
+a = 78
+b = 79'''
