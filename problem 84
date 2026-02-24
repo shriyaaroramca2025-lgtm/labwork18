@@ -1,0 +1,10 @@
+# Input
+keys = input().split()
+values = input().split()
+
+d = {}
+
+for i in range(len(keys)):
+    d[keys[i]] = values[i]
+
+print(d)
