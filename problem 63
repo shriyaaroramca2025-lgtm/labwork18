@@ -1,0 +1,11 @@
+# Input
+lst = list(map(int, input().split()))
+
+total = 0
+
+for num in lst:
+    total += num
+
+average = total / len(lst)
+
+print(average)

@@ -1,0 +1,10 @@
+# Input
+lst = list(map(int, input().split()))
+k = int(input())
+
+n = len(lst)
+k = k % n
+
+rotated = lst[k:] + lst[:k]
+
+print(rotated)

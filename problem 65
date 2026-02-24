@@ -1,0 +1,7 @@
+# Input
+lst = list(map(int, input().split()))
+
+if lst == lst[::-1]:
+    print("Palindrome")
+else:
+    print("Not a Palindrome")
