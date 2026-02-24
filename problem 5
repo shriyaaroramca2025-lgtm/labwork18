@@ -8,3 +8,9 @@ amount = p * (1 + r/100) ** t
 ci = amount - p
 
 print("Compound Interest =", ci)
+
+'''OUTPUT-
+Enter principal amount: 400
+Enter rate of interest: 20
+Enter time (years): 2
+Compound Interest = 176.0'''
