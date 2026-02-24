@@ -1,0 +1,10 @@
+text = input("Enter string: ")
+
+rev = ""
+for ch in text:
+    rev = ch + rev
+
+print("Reversed String:", rev)
+
+'''OUTPUT-Enter string: cherry
+Reversed String: yrrehc'''

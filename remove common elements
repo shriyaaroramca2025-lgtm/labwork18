@@ -1,0 +1,7 @@
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
+
+result = a - b
+print("After removing common elements:", result)
+
+#OUTPUT-After removing common elements: {1, 2}
