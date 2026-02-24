@@ -12,3 +12,9 @@ else:
     largest = c
 
 print("Largest number is:", largest)
+
+'''OUTPUT-
+Enter first number: 20 
+Enter second number: 50
+Enter third number: 39
+Largest number is: 50'''
