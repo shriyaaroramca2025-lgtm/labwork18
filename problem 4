@@ -7,3 +7,9 @@ t = float(input("Enter time (years): "))
 si = (p * r * t) / 100
 
 print("Simple Interest =", si)
+
+'''OUTPUT-
+Enter principal amount: 30
+Enter rate of interest: 4
+Enter time (years): 2
+Simple Interest = 2.4'''
