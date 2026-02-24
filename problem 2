@@ -8,3 +8,7 @@ elif num < 0:
     print("Negative number")
 else:
     print("Zero")
+
+'''OUTPUT-
+Enter a number: 3 
+Positive number'''
