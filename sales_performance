@@ -1,0 +1,35 @@
+import pandas as pd
+
+# Dataset
+sales = [200, 450, 300, 150, 500, 700, 100]
+days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
+
+s = pd.Series(sales, index=days)
+
+# 1. Best and worst day
+best_day = s.idxmax()
+worst_day = s.idxmin()
+
+# 2. Total and average sales
+total_sales = s.sum()
+avg_sales = s.mean()
+
+# 3. Apply 20% bonus where sales > 400
+bonus_sales = s.copy()
+bonus_sales[bonus_sales > 400] *= 1.20
+
+# 4. Sort descending
+sorted_sales = s.sort_values(ascending=False)
+
+# Output
+print("Best Sales Day:", best_day)
+print("Worst Sales Day:", worst_day)
+
+print("\nTotal Sales:", total_sales)
+print("Average Sales:", avg_sales)
+
+print("\nSales after Bonus:")
+print(bonus_sales)
+
+print("\nSorted Sales (Descending):")
+print(sorted_sales)

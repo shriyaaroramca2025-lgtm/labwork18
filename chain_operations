@@ -1,0 +1,16 @@
+import pandas as pd
+
+# Dataset
+data = [5, None, 15, 25, None, 35, 45]
+s = pd.Series(data)
+
+# Chained operations
+result = (
+    s.fillna(s.median())   # fill with median
+     .loc[lambda x: x > 20]  # filter > 20
+     .sort_values(ascending=False)  # sort desc
+     .reset_index(drop=True)  # reset index
+)
+
+print("Final Result:")
+print(result)

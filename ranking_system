@@ -1,0 +1,22 @@
+import pandas as pd
+
+# Dataset
+scores = [88, 92, 79, 93, 85]
+players = ['P1','P2','P3','P4','P5']
+
+s = pd.Series(scores, index=players)
+
+# 1. Rank players (higher score = better rank)
+ranks = s.rank(ascending=False)
+print("Player Ranks:")
+print(ranks)
+
+# 2. Top 3 players
+top3 = s.sort_values(ascending=False).head(3)
+print("\nTop 3 Players:")
+print(top3)
+
+# 3. Player with lowest score
+lowest = s.idxmin()
+print("\nPlayer with lowest score:", lowest)
+print("Lowest score:", s.min())

@@ -1,0 +1,32 @@
+import pandas as pd
+
+# Dataset
+data = [10, None, 30, None, 50, 60, None]
+s = pd.Series(data)
+
+# Count missing before
+missing_before = s.isnull().sum()
+
+# Fill missing with mean
+mean_value = s.mean()
+s_filled = s.fillna(mean_value)
+
+# Count missing after
+missing_after = s_filled.isnull().sum()
+
+# Drop remaining nulls (if any)
+s_cleaned = s_filled.dropna()
+
+# Output
+print("Original Series:")
+print(s)
+
+print("\nMissing values before:", missing_before)
+
+print("\nSeries after filling with mean:")
+print(s_filled)
+
+print("\nMissing values after:", missing_after)
+
+print("\nFinal cleaned Series:")
+print(s_cleaned)

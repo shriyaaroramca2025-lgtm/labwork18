@@ -1,0 +1,25 @@
+import pandas as pd
+
+# Dataset
+marks = [45, 67, 89, 34, 90, 55, 72]
+subjects = ['Math', 'Physics', 'Chemistry', 'English', 'CS', 'Biology', 'History']
+
+s = pd.Series(marks, index=subjects)
+
+# 1. Subjects with marks > 70
+print("Subjects with marks > 70:")
+print(s[s > 70])
+
+# 2. Replace marks < 40 with "Fail"
+s_updated = s.copy()
+s_updated[s_updated < 40] = "Fail"
+print("\nUpdated Series (marks < 40 replaced with 'Fail'):")
+print(s_updated)
+
+# 3. Count subjects above average
+average = s.mean()
+count_above_avg = (s > average).sum()
+print("\nAverage Marks:", average)
+print("Number of subjects above average:", count_above_avg)
+
+

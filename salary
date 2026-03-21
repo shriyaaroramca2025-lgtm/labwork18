@@ -1,0 +1,31 @@
+import pandas as pd
+
+# Dataset
+salary = [25000, 32000, 28000, 40000, 50000]
+emp = ['A', 'B', 'C', 'D', 'E']
+
+s = pd.Series(salary, index=emp)
+
+# 1. Increase salary by 10% where salary < 30000
+s[s < 30000] = s[s < 30000] * 1.10
+
+# 2. Decrease salary by 5% where salary > 45000
+s[s > 45000] = s[s > 45000] * 0.95
+
+# 3. Total salary expense after changes
+total_expense = s.sum()
+
+# Output
+print("Updated Salaries:")
+print(s)
+
+print("\nTotal Salary Expense:", total_expense)
+
+'''Output-
+A    27500.0
+B    32000.0
+C    30800.0
+D    40000.0
+E    47500.0
+
+Total Salary Expense: 177800.0'''

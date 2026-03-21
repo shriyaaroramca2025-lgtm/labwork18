@@ -1,0 +1,15 @@
+import pandas as pd
+
+# Dataset
+s1 = pd.Series([10, 20, 30], index=['A', 'B', 'C'])
+s2 = pd.Series([5, 15, 25], index=['B', 'C', 'D'])
+
+# 1. Add both Series
+result = s1 + s2
+print("Addition Result (with NaN):")
+print(result)
+
+# 2. Replace NaN with 0 and recompute
+result_fixed = s1.add(s2, fill_value=0)
+print("\nAfter replacing NaN with 0:")
+print(result_fixed)
