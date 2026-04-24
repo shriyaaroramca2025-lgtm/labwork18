@@ -1,0 +1,15 @@
+# Input
+n = int(input())
+d = {}
+
+for i in range(n):
+    key = input()
+    value = int(input())
+    d[key] = value
+
+total = 0
+
+for val in d.values():
+    total += val
+
+print(total)

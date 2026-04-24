@@ -1,0 +1,12 @@
+# Input
+n = int(input())
+d = {}
+
+for i in range(n):
+    key = input()
+    value = input()
+    d[key] = value
+
+sorted_dict = dict(sorted(d.items()))
+
+print(sorted_dict)

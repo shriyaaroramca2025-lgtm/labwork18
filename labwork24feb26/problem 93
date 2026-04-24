@@ -1,0 +1,16 @@
+# Input
+text = input()
+
+result = ""
+
+for ch in text:
+    if ch.lower() in "aeiou":
+        result += "*"
+    else:
+        result += ch
+
+print(result)
+
+'''Output-
+hello everyone 
+h*ll* *v*ry*n*'''

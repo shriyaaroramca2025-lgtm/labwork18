@@ -1,0 +1,9 @@
+# Input
+username = input("Enter username: ")
+password = input("Enter password: ")
+
+# Validation (example rules)
+if username == "admin" and password == "12345":
+    print("Login Successful")
+else:
+    print("Invalid Username or Password")

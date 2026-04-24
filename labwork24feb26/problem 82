@@ -1,0 +1,14 @@
+# Input
+n = int(input())
+d = {}
+
+for i in range(n):
+    key = input()
+    value = input()
+    d[key] = value
+
+remove_key = input()
+
+d.pop(remove_key, "Key not found")
+
+print(d)

@@ -1,0 +1,12 @@
+# Input
+list1 = list(map(int, input().split()))
+list2 = list(map(int, input().split()))
+
+merged = list1 + list2
+unique = []
+
+for item in merged:
+    if item not in unique:
+        unique.append(item)
+
+print(unique)

@@ -1,0 +1,12 @@
+def unique_elements(lst):
+    unique = []
+    for item in lst:
+        if item not in unique:
+            unique.append(item)
+    return unique
+
+# Input list
+lst = list(map(int, input().split()))
+
+result = unique_elements(lst)
+print(result)
