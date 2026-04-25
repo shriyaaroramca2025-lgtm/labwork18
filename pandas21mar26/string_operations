@@ -1,0 +1,20 @@
+import pandas as pd
+
+# Dataset
+names = ['anuj', 'rahul', 'sneha', 'kiran', 'amit']
+s = pd.Series(names)
+
+# 1. Convert to uppercase
+upper_names = s.str.upper()
+print("Uppercase Names:")
+print(upper_names)
+
+# 2. Find names containing 'a'
+contains_a = s[s.str.contains('a')]
+print("\nNames containing 'a':")
+print(contains_a)
+
+# 3. Replace 'anuj' with 'Anuj Kumar'
+replaced = s.replace('anuj', 'Anuj Kumar')
+print("\nAfter Replacement:")
+print(replaced)
