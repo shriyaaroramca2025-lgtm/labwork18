@@ -1,0 +1,8 @@
+nums = [10, 45, 2, 78, 23]
+
+print("Largest:", max(nums))
+print("Smallest:", min(nums))
+
+'''OUTPUT-
+'Largest: 78
+Smallest: 2'''

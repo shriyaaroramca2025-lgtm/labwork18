@@ -1,0 +1,25 @@
+# Input string
+sentence = input("Enter a sentence: ")
+
+# Convert string to list of words
+words = sentence.lower().split()
+
+# Create set of unique words
+unique_words = set(words)
+
+# Dictionary to store frequency
+frequency = {}
+
+for word in unique_words:
+    frequency[word] = words.count(word)
+
+# Convert dictionary items to tuple list
+result = tuple(frequency.items())
+
+print("Word Frequencies:")
+print(result)
+
+'''OUTPUT-
+Enter a sentence: python is easy and python is powerful
+Word Frequencies:
+(('powerful', 1), ('easy', 1), ('is', 2), ('python', 2), ('and', 1))'''
